@@ -1,0 +1,17 @@
+﻿<controls:CustomWindow x:Class="Flip.Views.MainWindow"
+                       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                       xmlns:prism="http://prismlibrary.com/"
+                       xmlns:material="http://materialdesigninxaml.net/winfx/xaml/themes"
+                       xmlns:controls="clr-namespace:Flip.Controls"
+                       Style="{StaticResource CustomWindowStyle}"
+                       TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+                       Background="{DynamicResource MaterialDesignPaper}"
+                       FontFamily="{material:MaterialDesignFont}"
+                       prism:ViewModelLocator.AutoWireViewModel="True"
+                       Title="{Binding Title}" Height="500" Width="900"
+                       WindowStartupLocation="CenterScreen">
+    <Grid>
+
+    </Grid>
+</controls:CustomWindow>
