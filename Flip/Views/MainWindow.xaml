@@ -12,6 +12,16 @@
                        Title="{Binding Title}" Height="500" Width="900"
                        WindowStartupLocation="CenterScreen">
     <Grid>
-
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <TextBox Grid.Row="0" Text="Main View" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" FontSize="50"/>
+        <StackPanel Grid.Row="1" Orientation="Vertical" Margin="20">
+            <Button Width="300" Margin="0,10" Content="Play"/>
+            <Button Width="300" Margin="0,10" Content="Edit"/>
+            <Button Width="300" Margin="0,10" Content="Option"/>
+            <Button Width="300" Margin="0,10" Content="Exit"/>
+        </StackPanel>
     </Grid>
 </controls:CustomWindow>

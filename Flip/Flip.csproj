@@ -12,4 +12,11 @@
     <PackageReference Include="Prism.DryIoc" Version="8.1.97" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Flip.Core\Flip.Core.csproj" />
+    <ProjectReference Include="..\Flip.Editor\Flip.Editor.csproj" />
+    <ProjectReference Include="..\Flip.Option\Flip.Option.csproj" />
+    <ProjectReference Include="..\Flip.Play\Flip.Play.csproj" />
+  </ItemGroup>
+
 </Project>

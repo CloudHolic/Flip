@@ -3,7 +3,30 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31613.86
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flip", "Flip\Flip.csproj", "{687458C8-3519-42A9-8156-D62B1754B0B3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Flip", "Flip\Flip.csproj", "{687458C8-3519-42A9-8156-D62B1754B0B3}"
+	ProjectSection(ProjectDependencies) = postProject
+		{538F9814-49FE-429B-93AD-A4C33415B3F1} = {538F9814-49FE-429B-93AD-A4C33415B3F1}
+		{56FDDC57-6703-4410-B3F1-893972AF6DE3} = {56FDDC57-6703-4410-B3F1-893972AF6DE3}
+		{471DFFB1-241E-4143-AB3B-8FCEA373CA52} = {471DFFB1-241E-4143-AB3B-8FCEA373CA52}
+		{CA38CABA-F3FD-4DC2-96F0-EB302B5B87FC} = {CA38CABA-F3FD-4DC2-96F0-EB302B5B87FC}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flip.Core", "Flip.Core\Flip.Core.csproj", "{CA38CABA-F3FD-4DC2-96F0-EB302B5B87FC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flip.Editor", "Flip.Editor\Flip.Editor.csproj", "{538F9814-49FE-429B-93AD-A4C33415B3F1}"
+	ProjectSection(ProjectDependencies) = postProject
+		{CA38CABA-F3FD-4DC2-96F0-EB302B5B87FC} = {CA38CABA-F3FD-4DC2-96F0-EB302B5B87FC}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flip.Option", "Flip.Option\Flip.Option.csproj", "{56FDDC57-6703-4410-B3F1-893972AF6DE3}"
+	ProjectSection(ProjectDependencies) = postProject
+		{CA38CABA-F3FD-4DC2-96F0-EB302B5B87FC} = {CA38CABA-F3FD-4DC2-96F0-EB302B5B87FC}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flip.Play", "Flip.Play\Flip.Play.csproj", "{471DFFB1-241E-4143-AB3B-8FCEA373CA52}"
+	ProjectSection(ProjectDependencies) = postProject
+		{CA38CABA-F3FD-4DC2-96F0-EB302B5B87FC} = {CA38CABA-F3FD-4DC2-96F0-EB302B5B87FC}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +38,22 @@ Global
 		{687458C8-3519-42A9-8156-D62B1754B0B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{687458C8-3519-42A9-8156-D62B1754B0B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{687458C8-3519-42A9-8156-D62B1754B0B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA38CABA-F3FD-4DC2-96F0-EB302B5B87FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA38CABA-F3FD-4DC2-96F0-EB302B5B87FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA38CABA-F3FD-4DC2-96F0-EB302B5B87FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA38CABA-F3FD-4DC2-96F0-EB302B5B87FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{538F9814-49FE-429B-93AD-A4C33415B3F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{538F9814-49FE-429B-93AD-A4C33415B3F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{538F9814-49FE-429B-93AD-A4C33415B3F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{538F9814-49FE-429B-93AD-A4C33415B3F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56FDDC57-6703-4410-B3F1-893972AF6DE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56FDDC57-6703-4410-B3F1-893972AF6DE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56FDDC57-6703-4410-B3F1-893972AF6DE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56FDDC57-6703-4410-B3F1-893972AF6DE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{471DFFB1-241E-4143-AB3B-8FCEA373CA52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{471DFFB1-241E-4143-AB3B-8FCEA373CA52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{471DFFB1-241E-4143-AB3B-8FCEA373CA52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{471DFFB1-241E-4143-AB3B-8FCEA373CA52}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

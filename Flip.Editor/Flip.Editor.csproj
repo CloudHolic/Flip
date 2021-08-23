@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	  <TargetFramework>net5.0-windows</TargetFramework>
+	  <UseWPF>true</UseWPF>
+	  <ProductReferenceAssembly>false</ProductReferenceAssembly>
+	  <AssemblyName>Flip.Editor</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MaterialDesignColors" Version="2.0.1" />
+    <PackageReference Include="MaterialDesignThemes" Version="4.1.0" />
+    <PackageReference Include="Prism.Wpf" Version="8.1.97" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Flip.Core\Flip.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Views\EditorMainView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+  </ItemGroup>
+
+</Project>

@@ -1,4 +1,7 @@
 ﻿using System.Windows;
+using Flip.Editor;
+using Flip.Option;
+using Flip.Play;
 using Flip.Views;
 using Prism.Ioc;
 using Prism.Modularity;
@@ -22,7 +25,9 @@ namespace Flip
 
         protected override void ConfigureModuleCatalog(IModuleCatalog moduleCatalog)
         {
-
+            moduleCatalog.AddModule<PlayModule>();
+            moduleCatalog.AddModule<EditorModule>();
+            moduleCatalog.AddModule<OptionModule>();
         }
     }
 }
