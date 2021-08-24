@@ -14,7 +14,7 @@ namespace Flip.Core.Interfaces
 
         public virtual bool IsNavigationTarget(NavigationContext navigationContext)
         {
-            return true;
+            return false;
         }
 
         public virtual void OnNavigatedTo(NavigationContext navigationContext)

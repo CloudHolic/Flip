@@ -1,5 +1,4 @@
-﻿using System.Windows;
-using Prism.Mvvm;
+﻿using Prism.Mvvm;
 
 namespace Flip.ViewModels
 {

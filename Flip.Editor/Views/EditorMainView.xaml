@@ -10,7 +10,12 @@
              Background="{DynamicResource MaterialDesignPaper}"
              FontFamily="{material:MaterialDesignFont}"
              prism:ViewModelLocator.AutoWireViewModel="True">
-    <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
-        <TextBox Text="Editor View" FontSize="50"/>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="60"/>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" Text="{Binding Title}" FontSize="50"/>
+        <Button Grid.Row="1" HorizontalAlignment="Left" Content="Back" Margin="10" Width="200" Command="{Binding BackCommand}"/>
     </Grid>
 </UserControl>

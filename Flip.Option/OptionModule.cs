@@ -1,8 +1,6 @@
-﻿using Flip.Core;
-using Flip.Option.Views;
+﻿using Flip.Option.Views;
 using Prism.Ioc;
 using Prism.Modularity;
-using Prism.Regions;
 
 namespace Flip.Option
 {
@@ -10,8 +8,7 @@ namespace Flip.Option
     {
         public void OnInitialized(IContainerProvider containerProvider)
         {
-            var regionManager = containerProvider.Resolve<IRegionManager>();
-            regionManager.RequestNavigate(RegionNames.EditRegion, nameof(OptionMainView));
+
         }
 
         public void RegisterTypes(IContainerRegistry containerRegistry)
