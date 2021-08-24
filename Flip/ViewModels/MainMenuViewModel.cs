@@ -22,11 +22,6 @@ namespace Flip.ViewModels
             Title = "Main View";
         }
 
-        public override bool IsNavigationTarget(NavigationContext navigationContext)
-        {
-            return true;
-        }
-
         #region PlayCommand
         private DelegateCommand _playCommand;
         public DelegateCommand PlayCommand => _playCommand ??= new DelegateCommand(ExecutePlayCommand);
